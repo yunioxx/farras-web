@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio website template - Modern minimalist design">
+    <meta name="keywords" content="portfolio, professional, designer, developer, minimalist">
+    <meta name="author" content="Farras">
+    <title>Farras porto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">My porto</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Muhammad al farras</h1>
+                <p class="hero-subtitle">Part of the stundents of SMKN 5 telkom Banda Aceh</p>
+                <p class="hero-description"></p>
+                <a href="#portfolio" class="cta-button">View My Projects!</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-description">
+                        Welcome to my portfolio. Let me introduce myself, my name is Muhammad Al Farras, I'm a student at SMKN 5 Telkom Banda Aceh, who is currently studying the world of Programming and Software Development.
+                    <p class="about-description">
+                       I hope that together with Smkn 5 Telkom Banda Aceh we can continue to inspire everyone and continue to innovate in the world of software programming.
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Month Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">-</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="farras-1.webp"  alt="Profile Picture" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title fade-in">Talents & Interests</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🎮</div>
+                    <h3 class="skill-title">Game</h3>
+                    <p class="skill-description">I am quite talented in the world of gaming</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🏃</div>
+                    <h3 class="skill-title">Sports</h3>
+                    <p class="skill-description">I am also interested in the world of sports, especially football, swimming and esports.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">⛰️</div>
+                    <h3 class="skill-title">Hiking</h3>
+                    <p class="skill-description">I am very interested in exploring nature, especially mountain climbing.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">💡</div>
+                    <h3 class="skill-title">Analysis & Problem solving</h3>
+                    <p class="skill-description">I am able to think long and analyze to solve a problem</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🎸</div>
+                    <h3 class="skill-title">Music</h3>
+                    <p class="skill-description">I have an interest in the world of music and like to listen to several types of music such as indie, jazz, rock and others.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title fade-in">My Projects</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+             <!--note:jika ingin mengisi genre project di bawah table gunakan "class=tag" pada kode span-->
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="farras-2.webp" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" aria-label="View E-commerce Platform project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Soon!</h3>
+                        <p class="portfolio-description">You can see My project here!</p>
+                        <div class="portfolio-tags">
+                            <span class=></span>
+                        </div>
+                    </div>
+                  </div>
+                </section>
+    
+    
+    
+                  <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h2 class="section-title">Let's Talk Together!</h2>
+                    <p class="contact-description">
+                        Have a suggestion? Or just want to chat, you can contact me via the following social media
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:alfarras20202@gmail.com" class="contact-link">alfarras20202@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">My Instagram</span>
+                            <a href="https://www.instagram.com/raaaaaasr?igsh=NjF4d3J2eWxyNmhk" class="contact-link">@raaaaaasr</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-text">Aceh, Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://discordapp.com/users/rasbezirrr" class="social-link" aria-label="discord">Discord</a>
+                        <a href="https://github.com/yunioxx" class="social-link" aria-label="GitHub">GitHub</a>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-text">&copy; 2025 Farras. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#portfolio" class="footer-link">Portfolio</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
